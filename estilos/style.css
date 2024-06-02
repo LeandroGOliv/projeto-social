@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: vh;
+    width: vw;
+    background-color: black;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+
+section#phone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px; /*só ver o tamanho dessa imagem no gimp e largar aqui*/
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px; /*testando ate achar a certa*/
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#socials{
+text-align: right;
+}
+
+section#socials img{
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*para os outros icones nao se mexerem quando estiver com o mouse em cima de algum. (A borda comeca a fazer parte da caixa)*/
+}
+
+section#socials img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.616);
+    transform: translate(-3px, -3px); /*pra ele dar uma levantada*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.400);/*levatando pra compensar o efeito do transform*/
+    transition: transform 0.3s, border 0.2s;
+}
